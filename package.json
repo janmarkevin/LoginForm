@@ -2,7 +2,7 @@
   "name": "sample",
   "version": "1.0.0",
   "scripts": {
-    "compileSass": "sass --sourcemap=none --watch src/scss:dist/sass",
+    "compileSass": "sass --watch src/scss:dist/sass",
     "compilePug": "pug -w src/pug -o dist/ -P",
     "compileLive": "live-server --quiet --open=/dist"
   }

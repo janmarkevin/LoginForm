@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/sass/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>SAMPLE</title>
   </head>
   <body> 
-    <div class="logo">
-      <div class="logo__wrapper"><img class="logo__img" src="img/logo.png" alt="Yns Logo" title="Yns"></div>
-    </div>
+    <header class="header">
+      <div class="logo">
+        <div class="logo__wrapper"><a class="logo__link" href="#" title="Yns"><img class="logo__img" src="img/logo.png" alt="Yns Logo"></a></div>
+      </div>
+    </header>
     <div class="form__wrapper">
-      <form class="form" action="#" method="post"><span class="form__header">Employee Portal</span>
-        <label class="form__label" for="username">Username:</label>
-        <input class="form__input form__input--warning" type="text" name="username" placeholder="Username">
-        <label class="form__label" for="password">Password:</label>
-        <input class="form__input" type="password" name="password" placeholder="************"><a class="form__forgot-password" href="#" title="forgot password">Forgot Password?</a>
-        <button class="form__btn">Login</button>
-        <button class="form__btn form__btn--outline">Sign Up</button>
+      <form class="form" action="#" method="post">
+        <div class="form__header"><span class="form__header-title">Employee Portal</span></div>
+        <div class="form__body">
+          <label class="form__label" for="username">Username:</label>
+          <input class="form__input form__input--warning" type="text" name="username" placeholder="Username">
+          <label class="form__label" for="password">Password:</label>
+          <input class="form__input" type="password" name="password" placeholder="************"><a class="form__forgot-password" href="#" title="forgot password">Forgot Password?</a>
+          <button class="form__btn">Login</button>
+          <button class="form__btn form__btn--outline">Sign Up</button>
+        </div>
       </form>
     </div>
   </body>

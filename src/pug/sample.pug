@@ -4,19 +4,23 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="dist/sass/style.css")
+    link(rel="stylesheet", href="css/style.css")
     title SAMPLE
   body 
-    .logo
-      .logo__wrapper
-        img.logo__img(src="img/logo.png" alt="Yns Logo" title="Yns")
+    header.header
+      .logo
+        .logo__wrapper
+          a.logo__link(href="#" title="Yns")
+            img.logo__img(src="img/logo.png" alt="Yns Logo")
     .form__wrapper
       form.form(action="#" method="post")
-        span.form__header Employee Portal
-        label.form__label(for="username") Username:
-        input.form__input.form__input--warning(type="text" name="username" placeholder="Username")
-        label.form__label(for="password") Password:
-        input.form__input(type="password" name="password" placeholder="************")
-        a.form__forgot-password(href="#" title="forgot password") Forgot Password?
-        button.form__btn Login
-        button.form__btn.form__btn--outline Sign Up
+        .form__header
+          span.form__header-title Employee Portal
+        .form__body
+          label.form__label(for="username") Username:
+          input.form__input.form__input--warning(type="text" name="username" placeholder="Username")
+          label.form__label(for="password") Password:
+          input.form__input(type="password" name="password" placeholder="************")
+          a.form__forgot-password(href="#" title="forgot password") Forgot Password?
+          button.form__btn Login
+          button.form__btn.form__btn--outline Sign Up
